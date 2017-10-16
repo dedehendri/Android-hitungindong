@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrdicky.hd.MenuUtama">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Selamat Datang"
+        android:id="@+id/textView"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PESAN"
+        android:id="@+id/btn_pesan"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:id="@+id/btn_exit"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/btn_cek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cek"
+        android:layout_alignBaseline="@+id/btn_pesan"
+        android:layout_alignBottom="@+id/btn_pesan"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_pesan"
+        android:layout_below="@+id/btn_pesan"
+        android:layout_marginTop="46dp"
+        android:text="Help" />
+
+    <Button
+        android:id="@+id/btn_kurir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_help"
+        android:layout_alignEnd="@+id/btn_cek"
+        android:text="Kurir" />
+
+</RelativeLayout>
